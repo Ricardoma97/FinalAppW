@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<h1>LOL</h1>
+<ul>
+		<li>{{input type="text" class="form-control" value=n1 placeholder="n1"}}</li>	
+		<li>{{input type="text" class="form-control" value=n2 placeholder="n2"}}	</li>	
+		<li>{{input type="text" class="form-control" value=n3 placeholder="n3"}}</li>	
+</ul>
+<List @paction={{this.prime}} @actionname="prime" @n1={{n1}} @n2={{n2}} @n3={{n3}} @state={{this.state}}/>
+<List @paction={{this.odd}} @actionname="odd" @n1={{n1}} @n2={{n2}} @n3={{n3}} @state={{this.state}}/>
+<List @paction={{this.pow}} @actionname="pow" @n1={{n1}} @n2={{n2}} @n3={{n3}} @state={{this.state}}/>
