@@ -8,7 +8,7 @@ export default class ApplicationController extends Controller {
 		let r1,r2,r3;
 		if (numero1) {
 			console.log(true);
-			this.r1=true;
+			this.setState({r1:"lol"});
 		}else
 		console.log(false);
 		if (numero1) {
@@ -44,7 +44,7 @@ export default class ApplicationController extends Controller {
 		console.log(numero3*numero3);
 		return numero1*numero1;
 	}
-	@tracked state={
+	@tracked State={
 		r1:"respuesta1",
 		r2:"respuesta2",
 		r3:"respuesta3"
